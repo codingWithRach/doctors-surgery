@@ -2,64 +2,127 @@
 <html lang="en">
   <head>
     <title>Tech Returners Surgery</title>
-    <nav>
-      <a href="/index.html">Home</a> | <a href="#">Services</a> |
-      <a href="#">Team</a> | <a href="#">Patient Information</a> |
-      <a href="#">Wellbeing Centre</a>
-    </nav>
-    <p><a href="/">Tech Returners Surgery</a></p>
-    <p>
-      <a href="tel:03330509138"
-        >Click here to phone the surgery on 0333 050 9138</a
-      >
-    </p>
-    <p><input type="text" placeholder="Search..." /></p>
   </head>
   <body>
-    <h1>Welcome to the Tech Returners Surgery!</h1>
-    <section id="quickLinks">
-      <ul>
-        <li><a href="#updates">Updates</a></li>
-        <li><a href="#surgeryDetails">Surgery Details</a></li>
-        <li><a href="#askMyDoc">How to use Ask My Doc?</a></li>
-        <li><a href="#">Get Help Now</a</li>
-        <li><a href="#">Self Care Advice</a></li>
-        <li><a href="#">Wellbeing Centre</a></li>
-        <li><a href="#">Repeat Prescriptions</a></li>
-      </ul>
-    </section>
+    <header>
+      <nav>
+        <a href="/index.html">Home</a> | <a href="#">Services</a> |
+        <a href="#">Team</a> | <a href="#">Patient Information</a> |
+        <a href="#">Wellbeing Centre</a>
+      </nav>
+      <p><a href="/">Tech Returners Surgery</a></p>
+      <p>
+        <a href="tel:03330509138"
+          >Click here to phone the surgery on 0333 050 9138</a
+        >
+      </p>
+      <p><input type="text" placeholder="Search..." /></p>
+    </header>
+    <main>
+      <h1>Welcome to the Tech Returners Surgery!</h1>
+      <div>
+        <ul>
+          <li><a href="#updates">Updates</a></li>
+          <li><a href="#surgeryDetails">Surgery Details</a></li>
+          <li><a href="#askMyDoc">How to use Ask My Doc?</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+          <li><a href="#">Get Help Now</a></li>
+          <li><a href="#">Self Care Advice</a></li>
+          <li><a href="#">Wellbeing Centre</a></li>
+          <li><a href="#">Repeat Prescriptions</a></li>
+        </ul>
+      </div>
 
-    <section id="updates">
-      <h2>COVID RESTRICTION UPDATE</h2>
-      <p>
-        Throughout the pandemic we have striven to make the surgery as safe as
-        possible for all our patients and staff, we will continue to do so.
-      </p>
-      <p>
-        From the 19TH JULY 2021 NOTHING WILL CHANGE AT THE SURGERY – Patients
-        will still need to wear a mask, socially distance and use hand sanitiser
-        in the surgery and staff will continue to wear PPE.
-      </p>
-      <p>
-        If you arrive without a mask and are not exempt, you will be asked to
-        leave.
-      </p>
-    </section>
-    <section id="surgeryDetails">
+      <section id="updates">
+        <h2>COVID RESTRICTION UPDATE</h2>
+        <p>
+          Throughout the pandemic we have striven to make the surgery as safe as
+          possible for all our patients and staff, we will continue to do so.
+        </p>
+        <p>
+          From the 19TH JULY 2021 NOTHING WILL CHANGE AT THE SURGERY – Patients
+          will still need to wear a mask, socially distance and use hand
+          sanitiser in the surgery and staff will continue to wear PPE.
+        </p>
+        <p>
+          If you arrive without a mask and are not exempt, you will be asked to
+          leave.
+        </p>
+      </section>
+      <section id="surgeryDetails">
         <h2>Surgery Details</h2>
-        <p>The Tech Returners Surgery,<br>
-            115 Mancunian Way,<br>
-            Manchester,<br>
-            UK<br>
-            M20 3PX<br></p>
-        <img src="images/surgery.jpg" alt="Exterior of Tech Returners Surgery" width="500">
-    <h3>Opening Times</h3>
-    <p>Monday - Fridays: 8am - 7pm<br>
-        Saturdays - Sundays: 10am - 4pm</p>
-    </section>
-    <section id="askMyDoc">
+        <p>
+          The Tech Returners Surgery,<br />
+          115 Mancunian Way,<br />
+          Manchester,<br />
+          UK<br />
+          M20 3PX<br />
+        </p>
+        <img
+          src="images/surgery.jpg"
+          alt="Exterior of Tech Returners Surgery"
+          width="500"
+        />
+        <h3>Opening Times</h3>
+        <p>
+          Monday - Fridays: 8am - 7pm<br />
+          Saturdays - Sundays: 10am - 4pm
+        </p>
+      </section>
+      <section id="askMyDoc">
         <h2>How to use Ask My Doc?</h2>
-        <iframe alt="Video guide on how to use Ask My Doc? service" width ="420" height="315" src="https://www.youtube.com/watch?v=sFzCh-HhaWo"></iframe>
-    </section>
+        <video width="320" height="240" controls>
+          <source
+            src="https://www.youtube.com/watch?v=sFzCh-HhaWo"
+            type="video/mp4"
+            title="Video guide on how to use Ask My Doc? service"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+      <section id="feedback">
+        <h2>Feedback</h2>
+        <p>
+          Need advice or have some feedback for us? Send us a message by filling
+          out the form below, and one of our Receptionists will be in touch:
+        </p>
+        <form>
+          <p>Are you completing this form on behalf of:</p>
+          <input
+            type="radio"
+            name="onBehalfOf"
+            value="yourself"
+            id="yourself"
+          />
+          <label for="yourself">Yourself</label>
+          <input
+            type="radio"
+            name="onBehalfOf"
+            value="someoneElse"
+            id="someoneElse"
+          />
+          <label for="someoneElse">Someone Else</label><br />
+          <label for="firstname">Please enter your first name</label>
+          <input type="text" placeholder="First Name..." id="firstname" /><br />
+          <label for="secondname">Please enter your second name</label>
+          <input type="text" placeholder="Last Name..." id="secondname" /><br />
+          <label for="date_of_birth">Please enter your date of birth</label>
+          <input type="date" id="date_of_birth" /><br />
+          <label for="telephone">Please enter your telephone number</label>
+          <input type="tel" placeholder="Telephone..." id="telephone" /><br />
+          <label for="email">Please enter your email address</label>
+          <input type="email" placeholder="Email..." id="email" /><br />
+          <label for="message">Please enter your query or message</label>
+          <textarea
+            id="message"
+            rows="4"
+            cols="50"
+            placeholder="Your query or message..."
+          ></textarea>
+          <br />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
   </body>
 </html>
